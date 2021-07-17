@@ -1,0 +1,127 @@
+// ************************ SCSS ************************ //
+@import "navbar";
+@import "vars"; 
+@import "intro";
+@import "advantages";
+@import "motopark";
+@import "popup-descr";
+@import "positive";
+@import "reviews";
+@import "contacts";
+@import "main-form";
+@import "slider";
+
+
+     
+@media (max-width: 768px) {}
+
+// ************************ Defaul styles ************************ //
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #202020;
+}
+
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+.main-btn {
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+	padding: 15px 24px;
+	background: #7DC23C;
+	border-radius: 5px;
+
+	
+	font-weight: 600;
+	font-size: 18px;
+	color: #fff;
+	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s all;
+	&:hover {
+		background: darken($color: #7DC23C, $amount: 10%);
+	}
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}
+
+.main-title {
+	text-align: center;
+
+	font-weight: 900;
+	font-size: 42px;
+
+	margin-bottom: 50px;
+	
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		width: 150px;
+		height: 5px;
+		background: #669CDF;
+
+	}
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+

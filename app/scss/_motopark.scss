@@ -1,0 +1,163 @@
+.motopark {
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0;
+
+    &__btn {
+        width: 50%;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #3A68B8;
+        margin-top: 10px;
+        font-size: 14px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+    @media (max-width: 768px) {
+        padding: 50px 0;
+    }
+}
+.motopark__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.motopark__item {
+    transition: .6s all ease-out;
+    &:hover {
+        transform: scale(1.01);
+    }
+    width: 31.55%;
+    margin: 0 10px 60px;
+    padding: 20px 30px 50px;
+    background: #fff;
+    box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 5px;
+    @media (max-width: 1160px) {
+        width: 47.88%;
+    }
+    @media (max-width: 992px) {
+        width: 47.33%;;
+    }
+    @media (max-width: 768px) {
+        width: 47.22%;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    
+    text-align: center;
+    .moto-img {
+        cursor: pointer;
+        transition: 5s all linear;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    >img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .moto-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+    .moto-subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .moto-price {
+        color: #5CB30B;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 35px;
+        span {
+            font-size: 48px;
+            font-weight: 700;
+            color: #5CB30B;
+        }
+    }
+}
+.moto-desc {
+    margin-bottom: 50px;
+
+    .moto-desc__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 30px;
+        >img {
+            margin-right: 20px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            height: 1px;
+            width: 100%;
+            background: #C4C4C4;
+        }
+    }
+
+    &__equipment {
+        margin-bottom: 20px;
+    }
+
+    &__equipment__title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__equipment__item {
+        padding: 0 20px;
+
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &__equipment__item {
+        display: flex;
+        align-items: center;
+        margin: 5px;
+
+        >p {
+            font-size: 14px;
+        }
+
+        >img {
+            height: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.motopark__bg-1 {
+    position: absolute;
+    z-index: -1;
+
+    left: 0;
+    top: 73%;
+    @media (max-width: 1600px) {
+        transform: scale(0.8);
+        left: -50px;
+    }
+}
+.motopark__bg-2 {
+    position: absolute;
+    z-index: -1;
+
+    right: 15%;
+    top: 33%;
+    @media (max-width: 1600px) {
+        transform: scale(0.8);
+    }
+}

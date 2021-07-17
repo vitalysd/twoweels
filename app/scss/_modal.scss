@@ -1,0 +1,100 @@
+// ************************ Модальное окно ************************ //
+// mf
+.modal__wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    display: none;
+        .modal {
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+
+            width: 700px;
+            height: 300px;
+                &__title {
+                    text-align: center;
+                }
+                &__close{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+        }
+}
+
+// ************************ Кнопка вызова модального окна ************************ //
+
+
+.main-form {
+    &--close {
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        right: 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .form-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        width: 100%;
+        max-width: 895px;
+        margin: 0 auto;
+    
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin: 20px;
+        @media (max-width: 992px) {
+            width: 40%;
+        }
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    &__label {
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        background: #FFFFFF;
+        border: 1px solid #5CB30B;
+        border-radius: 5px;
+
+        padding: 10px;
+
+        width: 100%;
+    }
+}
+
+.form-btn {
+    width: 45%;
+    margin: 20px;
+    margin-top: 30px;
+    @media (max-width: 992px) {
+        width: 40%;
+    }
+    @media (max-width: 600px) {
+        margin: 20px auto;;
+    }
+}
+
