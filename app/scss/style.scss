@@ -28,8 +28,11 @@
 	color: #202020;
 }
 
-body {
+html {
 	scroll-behavior: smooth;
+}
+
+body {
 	overflow-x: hidden;
 }
 
@@ -107,6 +110,22 @@ h1, h2, h3, h4, h5, h6, p {
 		background: #669CDF;
 
 	}
+}
+
+.scroll-up {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+
+	height: 50px;
+	width: 50px;
+
+	background-color: #7DC23C;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 @keyframes fade {

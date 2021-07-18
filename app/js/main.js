@@ -1,3 +1,5 @@
+"use strict";
+
 // ===== Swiper ===== //
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -39,7 +41,7 @@ let closeBtns = document.querySelectorAll('.popup-close');
 // ===== Popup Open ===== //
 let popup = function(popupClick){
   popupViews[popupClick].classList.add('active');
-}
+};
 
 popupBtns.forEach((popupBtn, i ) => {
   popupBtn.addEventListener("click", () => {
@@ -66,7 +68,7 @@ let closeFormBtns = document.querySelectorAll('.main-form--close');
 // ===== Popup Open ===== //
 let form = function(formClick){
   formViews[formClick].classList.add('active');
-}
+};
 
 formBtns.forEach((formBtn, i ) => {
   formBtn.addEventListener("click", () => {
@@ -93,7 +95,7 @@ let closeSliderBtns = document.querySelectorAll('.slider-close');
 // ===== Popup Open ===== //
 let slider = function(sliderClick){
   sliderViews[sliderClick].classList.add('active');
-}
+};
 
 sliderBtns.forEach((sliderBtn, i ) => {
   sliderBtn.addEventListener("click", () => {
@@ -109,4 +111,3 @@ closeSliderBtns.forEach((closeSliderBtn) => {
     });
   });
 });
-
